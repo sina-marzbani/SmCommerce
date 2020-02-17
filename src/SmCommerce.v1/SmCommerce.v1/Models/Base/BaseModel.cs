@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SmCommerce.v1.Models.Base
 {
-    public class BaseModel
+    public abstract class BaseModel
     {
         public int Id { get; set; }
     }
