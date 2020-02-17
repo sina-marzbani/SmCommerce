@@ -15,7 +15,7 @@ namespace SmCommerce.v1.Data.Repository
         public Repository(DbContext dbContext)
         {
             _dbContext = dbContext;
-            _dbSet = dbContext.Set<T>();
+            _dbSet = _dbContext.Set<T>();
         }
         public void Add(T entity)
         {
