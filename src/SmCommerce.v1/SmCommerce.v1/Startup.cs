@@ -122,7 +122,7 @@ namespace SmCommerce.v1
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{area=Admin}/{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{area=Admin}/{controller=ProductCategory}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }

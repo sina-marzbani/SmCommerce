@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<html class="loading" data-textdirection="rtl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="SmAdmin is admin template rtl version">
+    <meta name="keywords" content="admin dashboard, bootstrap template, admin template, SmAdmin template, dashboard template, responsive admin template, web app, قالب راست چین , قالب بوت استرپ , بوت استرپ">
+    <meta name="author" content="SINAMARZBANI">
+    <title>@ViewBag.Title</title>
+    <link rel="apple-touch-icon" href="~/back-panel/app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="~/back-panel/app-assets/images/ico/favicon.ico">
+    <!-- Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="~/back-panel/app-assets/vendors/css/vendors-rtl.min.css">
+    <link href="~/back-panel/app-assets/vendors/css/tables/datatable/datatables.min.css" rel="stylesheet" />
+    <!-- Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="~/back-panel/app-assets/css-rtl/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/back-panel/app-assets/css-rtl/bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="~/back-panel/app-assets/css-rtl/colors.min.css">
+    <link rel="stylesheet" type="text/css" href="~/back-panel/app-assets/css-rtl/components.min.css">
+    <!-- Page CSS-->
+    <link rel="stylesheet" type="text/css" href="~/back-panel/app-assets/css-rtl/core/menu/menu-types/vertical-menu.min.css">
+    <link rel="stylesheet" type="text/css" href="~/back-panel/app-assets/css-rtl/core/colors/palette-gradient.min.css">
+    <!-- Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="~/back-panel/app-assets/css-rtl/custom-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="~/back-panel/assets/css/style-rtl.css">
+    <link rel="stylesheet" href="~/back-panel/assets/css/font.css">
+    <style>
+        .header-navbar {
+            min-height: 4rem;
+            height: 4rem;
+        }
+
+        .main-menu .main-menu-content {
+            margin-top: 0.27rem;
+        }
+
+        .main-menu .navbar-header {
+            height: auto;
+            position: relative;
+            padding: 0 1.64rem 0.3rem 1rem;
+        }
+
+        .main-menu.menu-light .navigation > li {
+            padding: 0;
+        }
+
+        .main-menu.menu-light .navigation li a {
+            border-radius: 0 !important;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            padding: 10px 15px 10px 5px;
+            box-shadow: 0px 2px 8px 0px rgba(29, 44, 187, 0.57);
+        }
+
+        .main-menu.menu-light .navigation li.hover > a {
+            padding: 10px 15px 10px 5px;
+            background-color: #7267f01a;
+            -webkit-transition: background-color .35s ease 0s !important;
+            transition: background-color .35s ease 0s !important;
+        }
+
+        .main-menu.menu-light .navigation > li.open > a {
+            margin-bottom: 0;
+        }
+
+        .main-menu.menu-light .navigation li.has-sub ul.menu-content {
+            padding: 0;
+            margin: 0;
+            background-color: #f5f5f5;
+            border-radius: 0;
+        }
+
+        .main-menu.menu-light .navigation li.has-sub.open ul.menu-content li a {
+            padding: 10px 20px 10px 15px;
+        }
+
+        .color-portal,
+        nav.color-portal,
+        .main-menu.color-portal .navigation {
+            background-color: #dce4ea !important;
+        }
+
+        html body.navbar-sticky .app-content .content-wrapper {
+            padding: 0.8rem 1.6rem 0.8rem 1.8rem;
+        }
+    </style>
+</head>
+
+<body class="vertical-layout vertical-menu-modern 2-columns navbar-sticky footer-static" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+    <!-- BEGIN: Header-->
+    <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu fixed-top navbar-light color-portal navbar-shadow">
+        <div class="navbar-wrapper">
+            <div class="navbar-container content">
+                <div class="navbar-collapse" id="navbar-mobile">
+                    <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ficon feather icon-menu"></i></a></li>
+                        </ul>
+                        <ul class="nav navbar-nav bookmark-icons">
+                            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-todo.html" data-toggle="tooltip" data-placement="top" title="Todo"><i class="ficon feather icon-check-square"></i></a></li>
+                            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-chat.html" data-toggle="tooltip" data-placement="top" title="Chat"><i class="ficon feather icon-message-square"></i></a></li>
+                            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-email.html" data-toggle="tooltip" data-placement="top" title="Email"><i class="ficon feather icon-mail"></i></a></li>
+                            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-calender.html" data-toggle="tooltip" data-placement="top" title="Calendar"><i class="ficon feather icon-calendar"></i></a></li>
+                        </ul>
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item d-none d-lg-block">
+                                <a class="nav-link bookmark-star"><i class="ficon feather icon-star warning"></i></a>
+                                <div class="bookmark-input search-input">
+                                    <div class="bookmark-input-icon"><i class="feather icon-search primary"></i></div>
+                                    <input class="form-control input" type="text" placeholder="Explore Vuexy..." tabindex="0" data-search="template-list">
+                                    <ul class="search-list search-list-bookmark"></ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="nav navbar-nav float-right">
+                        <li class="dropdown dropdown-language nav-item">
+                            <a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span class="selected-language">English</span></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-flag"><a class="dropdown-item" href="#" data-language="en"><i class="flag-icon flag-icon-us"></i> English</a><a class="dropdown-item" href="#" data-language="fr"><i class="flag-icon flag-icon-fr"></i> French</a><a class="dropdown-item" href="#" data-language="de"><i class="flag-icon flag-icon-de"></i> German</a><a class="dropdown-item" href="#" data-language="pt"><i class="flag-icon flag-icon-pt"></i> Portuguese</a></div>
+                        </li>
+                        <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand"><i class="ficon feather icon-maximize"></i></a></li>
+                        <li class="nav-item nav-search">
+                            <a class="nav-link nav-link-search"><i class="ficon feather icon-search"></i></a>
+                            <div class="search-input">
+                                <div class="search-input-icon"><i class="feather icon-search primary"></i></div>
+                                <input class="input" type="text" placeholder="Explore Vuexy..." tabindex="-1" data-search="template-list">
+                                <div class="search-input-close"><i class="feather icon-x"></i></div>
+                                <ul class="search-list search-list-main"></ul>
+                            </div>
+                        </li>
+                        <li class="dropdown dropdown-notification nav-item">
+                            <a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon feather icon-bell"></i><span class="badge badge-pill badge-primary badge-up prn">5</span></a>
+                            <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                                <li class="dropdown-menu-header">
+                                    <div class="dropdown-header m-0 p-2">
+                                        <h3 class="white">5 New</h3><span class="notification-title">App Notifications</span>
+                                    </div>
+                                </li>
+                                <li class="scrollable-container media-list">
+                                    <a class="d-flex justify-content-between" href="javascript:void(0)">
+                                        <div class="media d-flex align-items-start">
+                                            <div class="media-left"><i class="feather icon-file font-medium-5 warning"></i></div>
+                                            <div class="media-body">
+                                                <h6 class="warning media-heading">Generate monthly report</h6><small class="notification-text">Chocolate cake oat cake tiramisu marzipan</small>
+                                            </div>
+                                            <small><time class="media-meta" datetime="2015-06-11T18:29:20+08:00">Last month</time></small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="dropdown-menu-footer"><a class="dropdown-item p-1 text-center" href="javascript:void(0)">Read all notifications</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-user nav-item">
+                            <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+                                <div class="user-nav d-sm-flex d-none">
+                                    <span class="user-name">سینا مرزبانی</span><span class="user-status">Available</span>
+                                </div>
+                                <span><img class="round" src="~/back-panel/app-assets/images/portrait/small/user.png" alt="avatar" height="40" width="40"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="page-user-profile.html"><i class="feather icon-user"></i> Edit Profile</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="auth-login.html"><i class="feather icon-power"></i> Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Header-->
+    <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion color-portal menu-shadow" data-scroll-to-active="true">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item mr-auto">
+                    <a class="navbar-brand" href="#">
+                        <i class="feather icon-box"></i>
+                        <h2 class="brand-text mb-0">SmAdmin</h2>
+                    </a>
+                </li>
+                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="feather icon-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i class="toggle-icon feather icon-disc font-medium-4 d-none d-xl-block collapse-toggle-icon primary" data-ticon="icon-disc"></i></a></li>
+            </ul>
+        </div>
+        <div class="shadow-bottom"></div>
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class="navigation-header"><span>Forms &amp; Tables</span></li>
+                <li class="nav-item">
+                    <a href="#"><i class="feather icon-copy"></i><span class="menu-title">Form Elements</span></a>
+                    <ul class="menu-content">
+                        <li><a href="form-select.html"><i class="feather icon-circle"></i><span class="menu-item">Select</span></a></li>
+                    </ul>
+                </li>
+                <li class="active nav-item"><a href="form-layout.html"><i class="feather icon-box"></i><span class="menu-title">Form Layout</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- END: Main Menu-->
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+                <div class="content-header-left col-md-9 col-12 mb-2">
+                    <div class="row breadcrumbs-top">
+                        <div class="col-12">
+                            <h2 class="content-header-title float-left mb-0">Form Layouts</h2>
+                            <div class="breadcrumb-wrapper col-12">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a href="#">Forms</a>
+                                    </li>
+                                    <li class="breadcrumb-item active">
+                                        <a href="#">Form Layouts</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-header-right text-md-right col-md-3 col-12 d-md-block d-none">
+                    <div class="form-group breadcrum-right">
+                        <div class="dropdown">
+                            <button class="btn-icon btn btn-primary btn-round btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="feather icon-settings"></i></button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#">Chat</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-body">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light">
+        <p class="clearfix blue-grey lighten-2 mb-0">
+            <span class="float-md-left d-block d-md-inline-block mt-25 prn">COPYRIGHT &copy; 2020<a href="https://www.sinamarzbani.ir" target="_blank">Sina Marzbani,</a>All rights Reserved</span>
+            <span class="float-md-right d-none d-md-block">SmAdmin &nbsp;<i class="feather icon-box pink"></i></span>
+            <button class="btn btn-primary btn-icon scroll-top" type="button"><i class="feather icon-arrow-up"></i></button>
+        </p>
+    </footer>
+    <!-- END: Footer-->
+    <!-- Vendor JS-->
+    <script src="~/back-panel/app-assets/vendors/js/vendors.min.js"></script>
+    <!-- Page Vendor JS-->
+    <script src="~/back-panel/app-assets/vendors/js/tables/datatable/pdfmake.min.js"></script>
+    <script src="~/back-panel/app-assets/vendors/js/tables/datatable/vfs_fonts.js"></script>
+    <script src="~/back-panel/app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
+    <script src="~/back-panel/app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
+    <script src="~/back-panel/app-assets/vendors/js/tables/datatable/buttons.html5.min.js"></script>
+    <script src="~/back-panel/app-assets/vendors/js/tables/datatable/buttons.print.min.js"></script>
+    <script src="~/back-panel/app-assets/vendors/js/tables/datatable/buttons.bootstrap.min.js"></script>
+    <script src="~/back-panel/app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js"></script>
+    <!-- Theme JS-->
+    <script src="~/back-panel/app-assets/js/core/app-menu.min.js"></script>
+    <script src="~/back-panel/app-assets/js/core/app.js"></script>
+    <script src="~/back-panel/app-assets/js/scripts/components.min.js"></script>
+    <script src="~/back-panel/app-assets/js/scripts/footer.min.js"></script>
+    <!-- Page JS-->
+    <script src="~/back-panel/app-assets/js/scripts/datatables/datatable.min.js"></script>
+    <!-- Utility JS-->
+    <script src="~/back-panel/assets/js/persianumber.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.prn').persiaNumber();
+        });
+    </script>
+    @RenderSection("Scripts", required: false)
+</body>
+
+</html>
