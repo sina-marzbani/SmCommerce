@@ -13,34 +13,43 @@ function loadDataTable() {
         },
         "columns": [
             {
-                "data": "name",
-                "width": "50%"
+                "data": "title"
             },
             {
                 "data": "displayOrder",
-                "width": "20%"
+                "width": "12%",
+                "render": function (data) {
+                    return `<div class='text-center text-success'> ${data} </div>`
+                }
+            },
+            {
+                "data": "published",
+                "render": function (data) {
+                    if (data == true) {
+                        return "<div class='text-center text-info'><i class='feather icon-check'></div>";
+                    } else {
+                        return "<div class='text-center text-info'><i class='feather icon-x'></div>";
+                    }
+                },
+                "width": "12%"
             },
             {
                 "data": "id",
                 "render": function (data) {
                     return `<div class='text-center'>
-                                <a href="/admin/category/Upsert/${data}" class='btn btn-success text-white' style='cursor:pointer;width:100px'>
-                                    <i class='far fa-edit'></i> Edit
-                                </a>
+                                <a onclick=Delete("/Admin/ProductCategory/Delete/${data}") class='text-danger' style='cursor:pointer'><i class='feather icon-trash-2'></i></a>
                                 &nbsp;
-                                <a onclick=Delete("/admin/category/Delete/${data}") class='btn btn-danger text-white' style='cursor:pointer;width:100px'>
-                                    <i class='far fa-trash-alt'></i> Delete
-                                </a>
+                                <a href="/Admin/ProductCategory/Upsert/${data}" class='text-warning' style='cursor:pointer'><i class='feather icon-edit-1'></i></a>                                
                             </div>
                             `;
                 },
-                "width": "30%"
+                "width": "10%"
             }
         ],
         "language": {
-            "emptyTable": "No records found."
+            "emptyTable": "اطلاعاتی برای نمایش موجود نمی باشد."
         },
-        "width": "100%"
+        //"width": "100%"
     });
 }
 

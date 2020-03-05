@@ -29,7 +29,6 @@
     <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\share\" />
-    <Folder Include="wwwroot\back-panel\" />
     <Folder Include="wwwroot\front-panel\" />
   </ItemGroup>
 

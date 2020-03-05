@@ -5,26 +5,76 @@
 }
 
 
-<div class="border backgroundWhite">
-    <div class="row">
-        <div class="col-6">
-            <h2 class="text-primary">لیست دسته بندی کالا</h2>
+@*<div>
+        <div class="row">
+            <div class="col-6">
+                <h2 class="text-primary">لیست دسته بندی کالا</h2>
+            </div>
+            <div class="col-6 text-right">
+                <a class="btn btn-primary" asp-action="Upsert"><i class="fas fa-plus"></i> &nbsp; Create New Category</a>
+            </div>
         </div>
-        <div class="col-6 text-right">
-            <a class="btn btn-primary" asp-action="Upsert"><i class="fas fa-plus"></i> &nbsp; Create New Category</a>
+        <br /><br />
+        <table id="tblData" class="table table-striped table-bordered" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>DisplayOrder</th>
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+    </div>*@
+
+<div class="content-header row">
+    <div class="content-header-left col-md-6 col-12 mb-2">
+        <h3>لیست دسته بندی کالا</h3>
+    </div>
+    <div class="content-header-right text-md-right col-md-6 col-12">
+        <div class="form-group">
+            <button id="addRow" class="btn btn-primary"><i class="feather icon-plus"></i>&nbsp; افزودن</button>
         </div>
     </div>
-    <br /><br />
-    <table id="tblData" class="table table-striped table-bordered" style="width:100%">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Display Order</th>
-                <th></th>
-            </tr>
-        </thead>
-    </table>
 </div>
+<div class="content-body">
+    <div class="row">
+        <div class="col-12 form-group">
+            <button id="addRow" class="btn btn-primary"><i class="feather icon-plus"></i>&nbsp; افزودن</button>
+        </div>
+    </div>
+
+    <section>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title"></h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-body card-dashboard">
+                            <div class="table-responsive">
+                                <table id="tblData" class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>عنوان</th>
+                                            <th>ترتیب نمایش</th>
+                                            <th>منتشر کردن</th>
+                                            <th>عملیات</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+
+
 
 @section Scripts{
 
