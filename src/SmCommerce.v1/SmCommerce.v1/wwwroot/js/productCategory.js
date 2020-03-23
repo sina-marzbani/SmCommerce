@@ -2,6 +2,9 @@
 
 $(document).ready(function () {
     loadDataTable();
+    $('#searchTextbox').keyup(function () {
+        dataTable.search($(this).val()).draw();
+    });
 });
 
 function loadDataTable() {
@@ -17,7 +20,7 @@ function loadDataTable() {
             },
             {
                 "data": "displayOrder",
-                "width": "12%",
+                "width": "11.2%",
                 "render": function (data) {
                     return `<div class='text-center text-success'> ${data} </div>`
                 }
@@ -31,7 +34,7 @@ function loadDataTable() {
                         return "<div class='text-center text-info'><i class='feather icon-x'></div>";
                     }
                 },
-                "width": "12%"
+                "width": "10%"
             },
             {
                 "data": "id",
@@ -43,13 +46,25 @@ function loadDataTable() {
                             </div>
                             `;
                 },
-                "width": "10%"
+                "width": "7.5%",
+                "orderable": false
             }
         ],
         "language": {
-            "emptyTable": "اطلاعاتی برای نمایش موجود نمی باشد."
+            "emptyTable": "اطلاعاتی برای نمایش موجود نمی باشد.",
+            "paginate": {
+                "next": "بعد",
+                "previous": "قبل"
+            },
+            "info": "نمایش _START_ تا _END_ از _TOTAL_ سطر",
+            "loadingRecords": "در حال بارگذاری ...",
+            "processing": "در حال پردازش ...",
+            "sLengthMenu": "نمایش _MENU_ سطر",
+            "infoFiltered": ""
         },
-        //"width": "100%"
+        "width": "100%",
+        "order": [],
+        "dom": '<"float-left"f>rt<"row"<"col-sm-4"l><"col-sm-4"i><"col-sm-4"p>>'
     });
 }
 

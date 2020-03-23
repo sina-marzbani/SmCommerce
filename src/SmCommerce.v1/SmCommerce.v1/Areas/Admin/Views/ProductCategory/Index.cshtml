@@ -27,33 +27,62 @@
     </div>*@
 
 <div class="content-header row">
-    <div class="content-header-left col-md-6 col-12 mb-2">
+    <div class="content-header-left col-md-6 col-12 mb-1">
         <h3>لیست دسته بندی کالا</h3>
     </div>
     <div class="content-header-right text-md-right col-md-6 col-12">
-        <div class="form-group">
-            <button id="addRow" class="btn btn-primary"><i class="feather icon-plus"></i>&nbsp; افزودن</button>
+        <div class="form-group mb-1">
+            <button id="addRow" class="btn btn-primary"><i class="feather icon-plus"></i>افزودن</button>
         </div>
     </div>
 </div>
 <div class="content-body">
     <div class="row">
-        <div class="col-12 form-group">
-            <button id="addRow" class="btn btn-primary"><i class="feather icon-plus"></i>&nbsp; افزودن</button>
+        <div class="col-12">
+            <div class="card collapse-icon accordion-icon-rotate">
+                <div class="card-content">
+                    <div class="card-body">
+                        <div class="collapse-bordered">
+                            <div class="card collapse-header">
+                                <div id="headingCollapse1" class="card-header" data-toggle="collapse" role="button" data-target="#collapse1"
+                                     aria-expanded="false" aria-controls="collapse1">
+                                    <span class="lead collapse-title">
+                                        &nbsp;<i class="cu-info feather icon-search"></i>
+                                        جستجو
+                                    </span>
+                                </div>
+                                <div id="collapse1" role="tabpanel" aria-labelledby="headingCollapse1" class="collapse">
+                                    <div class="card-content">
+                                        <div class="card-body">
+                                            <div class="row form-group">
+                                                <div class="col-md-2">
+                                                    <label>عنوان دسته بندی</label>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <input type="text" id="searchTextbox" class="form-control" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
     <section>
         <div class="row">
             <div class="col-12">
                 <div class="card">
-                    <div class="card-header">
-                        <h4 class="card-title"></h4>
-                    </div>
+                    @*<div class="card-header">
+                            <h4 class="card-title"></h4>
+                        </div>*@
                     <div class="card-content">
-                        <div class="card-body card-dashboard">
+                        <div class="card-body">
                             <div class="table-responsive">
-                                <table id="tblData" class="table">
+                                <table id="tblData" class="table" width="100%">
                                     <thead>
                                         <tr>
                                             <th>عنوان</th>
@@ -70,10 +99,7 @@
             </div>
         </div>
     </section>
-
 </div>
-
-
 
 
 @section Scripts{

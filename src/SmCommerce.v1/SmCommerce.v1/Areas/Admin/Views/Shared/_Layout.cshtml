@@ -27,6 +27,13 @@
     <link rel="stylesheet" type="text/css" href="~/back-panel/assets/css/style-rtl.css">
     <link rel="stylesheet" href="~/back-panel/assets/css/font.css">
     <style>
+        .btn {
+            padding: .8rem .9rem;
+            letter-spacing: .12rem !important;
+            font-size: 0.893rem;
+            font-weight:bold;
+        }
+
         .header-navbar {
             min-height: 4rem;
             height: 4rem;
@@ -85,6 +92,95 @@
         html body.navbar-sticky .app-content .content-wrapper {
             padding: 0.8rem 1.6rem 0.8rem 1.8rem;
         }
+
+        /* BEGIN: Card custom */
+        .card {
+            margin-bottom: .5rem;
+        }
+
+        .card-body {
+            padding: .715rem;
+        }
+
+        .collapse-bordered .card .card-header {
+            padding: .2rem;
+        }
+
+        .collapse-bordered .card .card-body {
+            padding: .8rem;
+        }
+        /* END: Card custom */
+
+        /* BEGIN: Datatable custom */
+        table.dataTable tfoot td, table.dataTable tfoot th, table.dataTable thead td, table.dataTable thead th {
+            font-size: .86rem;
+        }
+
+        .table td {
+            padding: .78rem;
+            font-size: .9rem;
+        }
+
+        table.dataTable thead > tr > th.sorting_asc, table.dataTable thead > tr > th.sorting_desc, table.dataTable thead > tr > th.sorting, table.dataTable thead > tr > td.sorting_asc, table.dataTable thead > tr > td.sorting_desc, table.dataTable thead > tr > td.sorting {
+            padding-right: 24px;
+        }
+
+        .pagination .page-item.previous .page-link:after,
+        .pagination .page-item.next .page-link:before {
+            display: none;
+        }
+
+        div.dataTables_wrapper div.dataTables_info {
+            padding-top: 2.1em;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        table.dataTable td, table.dataTable th {
+            border-bottom: 1px solid #F8F8F8;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: rgb(248, 248, 248);
+            border-top: 0;
+            border-top-width: 0px;
+            border-top-style: initial;
+            border-top-color: initial;
+        }
+
+            table.dataTable td:not(:first-child), table.dataTable th:not(:first-child) {
+                border-right: 1px solid #F8F8F8;
+                border-right-width: 1px;
+                border-right-style: solid;
+                border-right-color: rgb(248, 248, 248);
+            }
+
+        table.dataTable thead tr, table.dataTable.table-striped tbody tr:nth-of-type(even) {
+            background-color: #dcdaf5;
+        }
+
+        table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:before,
+        table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after {
+            font-size: 0.8rem;
+            right: .5rem;
+        }
+
+        div.dataTables_wrapper div.dataTables_length label {
+            margin-top: 1.3rem;
+        }
+
+        .dataTables_filter {
+            display: none;
+        }
+        /* END: Datatable custom */
+
+        /* BEGIN: cu-info */
+        span i.cu-info {
+            font-size: 1.2rem;
+            color: #7367f099;
+            position: relative;
+            top: 2px;
+        }
+        /* END: cu-info */
     </style>
 </head>
 
@@ -233,7 +329,7 @@
     <!-- Theme JS-->
     <script src="~/back-panel/app-assets/js/core/app-menu.min.js"></script>
     <script src="~/back-panel/app-assets/js/core/app.js"></script>
-    <script src="~/back-panel/app-assets/js/scripts/components.min.js"></script>
+    <script src="~/back-panel/app-assets/js/scripts/components.js"></script>
     <script src="~/back-panel/app-assets/js/scripts/footer.min.js"></script>
     <!-- Page JS-->
     <script src="~/back-panel/app-assets/js/scripts/datatables/datatable.min.js"></script>
